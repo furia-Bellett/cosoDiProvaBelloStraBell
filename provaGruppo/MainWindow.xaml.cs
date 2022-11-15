@@ -24,5 +24,31 @@ namespace provaGruppo
         {
             InitializeComponent();
         }
+
+        private void bottone1_Click(object sender, RoutedEventArgs e)
+        {
+
+            Somma somma = new Somma();
+
+            double num1;
+            double num2;
+            double RisultatoSomma = 0;
+            
+
+            num1 = Convert.ToDouble(txtBox1);
+            num2 = Convert.ToDouble(txtBox2);
+
+
+           RisultatoSomma = somma.CalcoloDellaSomma(num1, num2);
+
+
+
+
+            lable3.Content = Convert.ToString(RisultatoSomma);
+
+
+
+
+        }
     }
 }
